@@ -5,6 +5,9 @@ import { HashRouter, Route, Link }  from 'react-router-dom';
 import  AsyncTest   from './module/Test';
 import  AsyncTest2  from './module/Test2';
 
+// css
+import 'antd/lib/date-picker/style/css';
+
 class App extends React.Component{
     render(){
         return(

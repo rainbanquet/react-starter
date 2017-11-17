@@ -1,0 +1,21 @@
+{
+  "name": "react-sample",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "JoshWu <rainbanquet@hotmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "~16.1.0"
+  }
+}
