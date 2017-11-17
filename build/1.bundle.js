@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ "./src/module/Test/Test.js":
+/***/ "./src/module/Test2/Test2.js":
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -24,30 +24,30 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Test = function (_React$Component) {
-	_inherits(Test, _React$Component);
+var Test2 = function (_React$Component) {
+	_inherits(Test2, _React$Component);
 
-	function Test() {
-		_classCallCheck(this, Test);
+	function Test2() {
+		_classCallCheck(this, Test2);
 
-		return _possibleConstructorReturn(this, (Test.__proto__ || Object.getPrototypeOf(Test)).apply(this, arguments));
+		return _possibleConstructorReturn(this, (Test2.__proto__ || Object.getPrototypeOf(Test2)).apply(this, arguments));
 	}
 
-	_createClass(Test, [{
+	_createClass(Test2, [{
 		key: 'render',
 		value: function render() {
 			return _react2.default.createElement(
 				'div',
 				null,
-				' Hello World Test 1'
+				' Hello World Test2'
 			);
 		}
 	}]);
 
-	return Test;
+	return Test2;
 }(_react2.default.Component);
 
-var _default = Test;
+var _default = Test2;
 exports.default = _default;
 ;
 
@@ -56,9 +56,9 @@ var _temp = function () {
 		return;
 	}
 
-	__REACT_HOT_LOADER__.register(Test, 'Test', '/Applications/XAMPP/xamppfiles/htdocs/my-project/react-sample/src/module/Test/Test.js');
+	__REACT_HOT_LOADER__.register(Test2, 'Test2', '/Applications/XAMPP/xamppfiles/htdocs/my-project/react-starter/src/module/Test2/Test2.js');
 
-	__REACT_HOT_LOADER__.register(_default, 'default', '/Applications/XAMPP/xamppfiles/htdocs/my-project/react-sample/src/module/Test/Test.js');
+	__REACT_HOT_LOADER__.register(_default, 'default', '/Applications/XAMPP/xamppfiles/htdocs/my-project/react-starter/src/module/Test2/Test2.js');
 }();
 
 ;
