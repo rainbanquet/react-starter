@@ -12,11 +12,8 @@ const config = {
     },
     devServer: {
         hotOnly: true,
+        host   : 'localhost',
         port   : 3500,
-        // historyApiFallback: {
-        //     index: __dirname+'/build/index.html'
-        // },
-        // historyApiFallback: true
     },
     module: {
         rules: [
