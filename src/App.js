@@ -6,7 +6,7 @@ import  AsyncTest   from './module/Test';
 import  AsyncTest2  from './module/Test2';
 
 // css
-import 'antd/lib/date-picker/style/css';
+import 'antd/dist/antd.css';
 
 class App extends React.Component{
     render(){

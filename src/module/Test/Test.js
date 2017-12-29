@@ -3,6 +3,8 @@ import { connect }              from 'react-redux'
 import { bindActionCreators }   from 'redux'
 import * as Action              from './TestAction.js';
 
+import { Button } from 'antd';
+
 class Test extends React.Component{
     render(){
         
@@ -10,7 +12,7 @@ class Test extends React.Component{
             <div> 
                 <div>Hello World Test</div>
                 <div>
-                    <button type="button" onClick={this.props.action.btnTestSwitch} >測試開關</button>
+                    <Button type="primary" onClick={this.props.action.btnTestSwitch} >測試開關</Button>
                     <span>{'：'+this.props.btn_test}</span>
                 </div>
             </div>
