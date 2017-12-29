@@ -66,7 +66,7 @@ var renderApp = function renderApp(Component) {
 };
 renderApp(_App2.default);
 
-// Webpack Hot Module Replacement API
+// hot reload Component
 if (true) {
     module.hot.accept("./src/App.js", function () {
 
@@ -74,6 +74,15 @@ if (true) {
         renderApp((0, _reactHotComponentLoader2.default)(function () {
             return new Promise(function(resolve) { resolve(); }).then(__webpack_require__.bind(null, "./src/App.js"));
         }));
+    });
+}
+// hot reload Reducer
+if (true) {
+    module.hot.accept("./src/common/reducer/index.js", function () {
+
+        var NextRootReducer = __webpack_require__("./src/common/reducer/index.js").default;
+
+        store.replaceReducer(NextRootReducer);
     });
 }
 ;
@@ -43751,7 +43760,7 @@ var _temp = function () {
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -43761,31 +43770,31 @@ exports.default = TestReducer;
 var _TestDispatch = __webpack_require__("./src/module/Test/TestDispatch.js");
 
 var init_state = {
-  btn_test: false
+    btn_test: false
 };
 function TestReducer() {
-  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : init_state;
-  var action = arguments[1];
+    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : init_state;
+    var action = arguments[1];
 
-  switch (action.type) {
-    case _TestDispatch.BTN_TEST_SWITCH:
-      {
-        return _extends({}, state, { btn_test: !state.btn_test });
-      }
-    default:
-      return state;
-  }
+    switch (action.type) {
+        case _TestDispatch.BTN_TEST_SWITCH:
+            {
+                return _extends({}, state, { btn_test: !state.btn_test });
+            }
+        default:
+            return state;
+    }
 }
 ;
 
 var _temp = function () {
-  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
-    return;
-  }
+    if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+        return;
+    }
 
-  __REACT_HOT_LOADER__.register(init_state, 'init_state', '/Applications/XAMPP/xamppfiles/htdocs/my-project/react-starter/src/module/Test/TestReducer.js');
+    __REACT_HOT_LOADER__.register(init_state, 'init_state', '/Applications/XAMPP/xamppfiles/htdocs/my-project/react-starter/src/module/Test/TestReducer.js');
 
-  __REACT_HOT_LOADER__.register(TestReducer, 'TestReducer', '/Applications/XAMPP/xamppfiles/htdocs/my-project/react-starter/src/module/Test/TestReducer.js');
+    __REACT_HOT_LOADER__.register(TestReducer, 'TestReducer', '/Applications/XAMPP/xamppfiles/htdocs/my-project/react-starter/src/module/Test/TestReducer.js');
 }();
 
 ;
