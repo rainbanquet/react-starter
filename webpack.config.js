@@ -23,12 +23,20 @@ const config = {
             {
                 test   : /\.js$/,
                 exclude: /(node_modules|bower_components)/,
-                use    : {
-                    loader : 'babel-loader',
-                    options: {
-                        presets: ['react']
+                use    : [
+                    {
+                        loader : 'babel-loader',
+                        options: {
+                            presets: ['react']
+                        }
+                    },
+                    {
+                        loader : 'eslint-loader',
+                        options : {
+                          // eslint options (if necessary)
+                        }
                     }
-                }
+                ]
             },
             {   
                 test: /\.css$/,

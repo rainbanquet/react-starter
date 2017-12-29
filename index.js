@@ -24,16 +24,25 @@ const renderApp = function( Component ){
                 <Component />
             </Provider>
         </AppContainer>,
-        document.getElementById('root'),
+        document.getElementById('root')
     )
 }
 renderApp(App)
  
-// Webpack Hot Module Replacement API
+// hot reload Component
 if( module.hot ){
     module.hot.accept( './src/App.js', function(){
 
         // renderApp( App )
         renderApp( HotLoader(function(){ return System.import('./src/App.js'); }) )
+    });
+}
+// hot reload Reducer
+if( module.hot ){
+    module.hot.accept('./src/common/reducer/index.js', function(){
+
+        const NextRootReducer = require('./src/common/reducer/index.js').default;
+
+        store.replaceReducer( NextRootReducer );
     });
 }

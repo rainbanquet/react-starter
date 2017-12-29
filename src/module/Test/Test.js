@@ -5,6 +5,7 @@ import * as Action              from './TestAction.js';
 
 class Test extends React.Component{
     render(){
+        
         return(
             <div> 
                 <div>Hello World Test</div>
